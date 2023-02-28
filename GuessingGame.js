@@ -27,4 +27,9 @@ while (parseInt(guessNum) !== randNum) {
     }
 }
 
-console.log(`It took you ${attempts} guesses.`)
+if (guessNum === 'q') {
+    console.log("OK you quit.")
+} else {
+    console.log("CONGRATS!!!")
+    console.log(`It took you ${attempts} guesses.`)
+}

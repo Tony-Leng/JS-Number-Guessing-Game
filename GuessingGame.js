@@ -26,3 +26,5 @@ while (parseInt(guessNum) !== randNum) {
         guessNum = prompt('Too Low. Guess Again.');
     }
 }
+
+console.log(`It took you ${attempts} guesses.`)

@@ -16,3 +16,13 @@ const randNum = Math.floor(Math.random() * maxNum) + 1;
 
 let guessNum = parseInt(prompt('enter your first guess'));
 let attempts = 1;
+
+while (parseInt(guessNum) !== randNum) {
+    if (guessNum === 'q') break;
+    attempts++;
+    if (guessNum > randNum) {
+        guessNum = prompt('Too High. Guess Again.');
+    } else {
+        guessNum = prompt('Too Low. Guess Again.');
+    }
+}

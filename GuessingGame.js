@@ -11,3 +11,8 @@ let maxNum = parseInt(prompt('Welcome! Enter your max number:'));
 while (!maxNum) {
     maxNum = parseInt(prompt('Enter a valid number:'));
 }
+
+const randNum = Math.floor(Math.random() * maxNum) + 1;
+
+let guessNum = parseInt(prompt('enter your first guess'));
+let attempts = 1;
